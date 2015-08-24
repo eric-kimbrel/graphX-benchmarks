@@ -1,0 +1,13 @@
+#! /bin/bash
+
+TOTAL_CORES=2
+EXECUTOR_MEMORY=1G
+APP_JAR=lib/scanstat-0.1.jar
+MAIN_CLASS=com.soteradefense.scanstat.CleanData
+
+
+
+T="$(date +%s)"
+spark-submit --total-executor-cores $TOTAL_CORES --executor-memory $EXECUTOR_MEMORY --class $MAIN_CLASS  $APP_JAR "$@"
+T="$(($(date +%s)-T))"
+echo "Time in seconds: ${T}"
