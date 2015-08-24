@@ -1,4 +1,4 @@
-package com.soteradefense.scanstat
+package com.soteradefense.graphbenchmarks
 
 import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.SparkContext._

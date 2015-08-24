@@ -2,8 +2,8 @@
 
 TOTAL_CORES=2
 EXECUTOR_MEMORY=1G
-APP_JAR=lib/scanstat-0.1.jar
-MAIN_CLASS=com.soteradefense.scanstat.PageRank
+APP_JAR=lib/graphX-benchmarks-0.1.jar
+MAIN_CLASS=com.soteradefense.graphbenchmarks.PageRank
 
 
 
